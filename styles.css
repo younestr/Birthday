@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-image: url('floral.jpg'); /* Use your local floral image */
+    background-size: cover;
+    background-position: center;
+    color: #2f3542;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    color: #6a0572;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 20px;
+}
+
+.poem p {
+    font-size: 1.5em;
+    margin: 15px 0;
+    animation: slideIn 1s ease-in-out;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #6a0572;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 20px; /* Reduced padding for smaller screens */
+    }
+
+    .container {
+        padding: 30px; /* Adjust container padding */
+    }
+
+    h1 {
+        font-size: 2em; /* Smaller font size for the title */
+    }
+
+    .poem p {
+        font-size: 1.2em; /* Smaller font size for the poem lines */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px; /* Further reduced padding for very small screens */
+    }
+
+    .container {
+        padding: 20px; /* Further adjust container padding */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Even smaller font size for the title */
+    }
+
+    .poem p {
+        font-size: 1em; /* Even smaller font size for the poem lines */
+    }
+
+    footer {
+        font-size: 1em; /* Adjust footer font size */
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
